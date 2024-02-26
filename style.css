@@ -1,0 +1,119 @@
+body {
+    background-color: pink;
+}
+
+#wrapper {
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 3%;
+    text-align: center;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slogan {
+    width: 50%;
+}
+
+#lovecompatibility {
+    text-align: center;
+}
+
+#resultlovometer {
+    font-size: larger;
+}
+
+#lovometer .col-3 {
+    display: inline-block;
+}
+
+#commentlovometer {
+    font-size: xx-large;
+    color: deeppink;
+}
+
+#backdinner {
+    visibility: hidden;
+}
+
+#lovecompatibility,
+#dinerauxchandelles,
+#unptitfilm {
+    margin-bottom: 3%;
+}
+
+#dinnerPage {
+    display: flex;
+    justify-content: center;
+}
+
+.recipeCard,
+.movieCard {
+    padding: 0;
+    margin: 0;
+    border: 0.1em solid;
+    border-color: palevioletred;
+    position: relative;
+}
+
+.reCardBody img {
+    max-width: 100%;
+    margin-bottom: 3%;
+}
+
+.reCardBody {
+    padding: 3%;
+}
+
+.overlayRecipe {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(216, 112, 147, 0.878);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.movieOverlay {
+    max-width: 100%;
+    position: relative;
+}
+
+.synopsishidden {
+    position: absolute;
+    padding: 2%;
+    bottom: 0%;
+    background-color: rgba(216, 112, 147, 0.853);
+    visibility: hidden;
+}
+
+.movieOverlay img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #slogan {
+        width: 100%;
+    }
+
+    .synopsishidden {
+        display: none;
+    }
+}

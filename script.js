@@ -2,7 +2,7 @@
 
 //récupération de l'API au submit des noms dans le formulaire
 document.getElementById('lovometer').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
 
     const sname = document.getElementById('sname').value;
     const fname = document.getElementById('fname').value;
@@ -11,7 +11,7 @@ document.getElementById('lovometer').addEventListener('submit', function (event)
     const options1 = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'c9466486d9msh1de57c41d4f5260p11b3ffjsnf27ebaaaffb2',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
         }
     };
@@ -78,7 +78,7 @@ function loadRecipe(pageCount) {
     const options3 = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'c9466486d9msh1de57c41d4f5260p11b3ffjsnf27ebaaaffb2',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
 
         }
@@ -141,7 +141,7 @@ const options = {
     method: 'GET',
     headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4NmE5ZGE0ODMwODgzMGFlODJjNzVjNzI0NDdkOTkzYyIsInN1YiI6IjY1Y2I3ODA4MTNhZjVmMDE2MzU3NDMzYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3J479AfvRcMu76y5xqpWDinN5VhNbO-H0Ypdr4A_bjw'
+        Authorization: ''
     }
 };
 
